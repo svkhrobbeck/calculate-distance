@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate distance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <form class="form" data-form>
+      <div class="form-container">
+        <h1 class="main-heading">
+          Bu kichik dastur masofa kiritilganda, sayyoh uchun 4 xil sayohat
+          usullarini taqdim etadi, hamda kiritilgan masofani hisoblab beradi.
+        </h1>
+        <div class="form-container__top">
+          <label class="form-container__text" for="distance">Masofa</label>
+          <input
+            class="form-container__input"
+            type="text"
+            placeholder="raqamda kiriting"
+            data-distance
+            id="distance"
+            required
+          />
+          <button class="form-container__btn" type="submit">Hisoblash</button>
+        </div>
+        <div class="form-container__bottom bottom-block">
+          <div class="bottom-block__cards block-cards">
+            <div class="bottom-block__card block-card">
+              <img src="./img/man-run.svg" width="80" alt="human" />
+              <h2 class="block-card__heading">Piyoda</h2>
+              <p class="block-card__text" data-foot>0 soat</p>
+            </div>
+            <div class="bottom-block__card block-card">
+              <img src="./img/bicycle.svg" width="80" alt="bicycle" />
+              <h2 class="block-card__heading">Velosiped</h2>
+              <p class="block-card__text" data-bike>0 soat</p>
+            </div>
+            <div class="bottom-block__card block-card">
+              <img src="./img/car.svg" width="80" alt="car" />
+              <h2 class="block-card__heading">Avtomobil</h2>
+              <p class="block-card__text" data-car>0 soat</p>
+            </div>
+            <div class="bottom-block__card block-card">
+              <img src="./img/plane.svg" width="80" alt="airplane" />
+              <h2 class="block-card__heading">Samolyot</h2>
+              <p class="block-card__text" data-plane>0 soat</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-container__text-block">
+          <ul>
+            <li><strong>O'rtacha tezlik</strong></li>
+            <li>Piyoda - 3.6 km/soat</li>
+            <li>Velosiped - 20.1 km/soat</li>
+            <li>Mashina - 70 km/soat</li>
+            <li>Samolyot - 800 km/soat</li>
+          </ul>
+        </div>
+      </div>
+    </form>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
